@@ -44,7 +44,7 @@ Contributor(s):
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/quickd2d_outlet_management?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true</property>
-    <property name="hibernate.connection.username">quickd2d_delivery</property>
+    <property name="hibernate.connection.username">barlarlar_delivery</property>
     <property name="hibernate.connection.password">abc123!@#ABC</property>
     <property name="hibernate.connection.provider_class">org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider</property>
     <property name="hibernate.c3p0.max_size">100</property>
