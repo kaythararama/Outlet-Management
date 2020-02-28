@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 15, 2020 4:04:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.icube.skilltest.outletmanagement.entity.Company" table="company" catalog="quickd2d_outlet_management" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="parentBranch" type="java.lang.Long">
+            <column name="parent_branch" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="256" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="512" not-null="true" />
+        </property>
+        <property name="latitude" type="java.lang.Double">
+            <column name="lat" />
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="lon" />
+        </property>
+        <property name="created" type="timestamp">
+            <column name="created" length="26" />
+        </property>
+        <property name="operatingHours" type="string">
+            <column name="operating_hours" length="16">
+            </column>
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="16">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
